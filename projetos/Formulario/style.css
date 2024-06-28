@@ -1,0 +1,89 @@
+html{
+	height: 150px;
+	width: 150px;
+	position: sticky;
+}
+
+body {	
+   font-family: 'Calibri Light', calibri, Arial, Helvetica, sans-serif;;
+	 background: #ff9c07;
+   display:flex;
+   flex-direction: row;
+}
+form {
+	margin: auto;
+	display: grid;
+	grid-template-columns: 140px 1fr 1fr 1fr;
+  width: 600px;
+	column-gap: 12px;
+	row-gap: 4px;
+	background-color: rgb(255, 0, 0);
+	padding: 0 15px 15px 15px;
+	border: 15px solid #000000;
+	border-radius: 22px;
+	
+}
+
+p{
+	grid-column: 2 / 5;
+	 font-size:x-large;
+	 
+}
+
+form label {
+	text-align: right;
+	padding: 7px 0;
+	align-self:flex-end;
+	font-style:normal;
+	border-color: black;
+	border-radius: 20px;
+	 
+}
+
+form label[for="gen"] {
+	justify-self: left;
+	padding: 10px 0;
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr 40px;
+	grid-template-rows: 40px;
+	
+}
+
+input[type="radio"]{
+    width: 35x;
+    height: 35px;
+	  place-self: stretch;
+	  align-self: center;
+	 
+}
+
+input[type="checkbox"]{
+    grid-column: 1,5;
+	width: 250px;
+	
+}
+
+input{
+	grid-column: 2 / 5;
+	border-radius: 30px;
+}
+
+input[type="reset"]{
+	grid-column: 1;
+	
+}
+
+input[type="submit"], input[type="reset"], input[type="color"] {
+	font-size: 12pt;
+	margin: auto;
+	width: 100%;
+	height: 48px;
+	border-radius: 10px;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+        filter: contrast(170%);
+		color: aqua;
+    }
+	

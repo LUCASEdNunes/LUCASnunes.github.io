@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Js.Js" defer></script>
+</head>
+<body>
+    <form action="javascript:alert('Formuário aprovado para envio')" method="post" id="formcad">
+        <p><strong>Dados de login da Empresa:</strong></p>
+        <label for="uid">Matricula</label>
+        <input type="text" name="uid" id="uid" required  minlength="8" maxlength="9" pattern="^[a-z0-9_-]{3,16}*$">
+
+
+      
+        <label for="pwd">Senha*</label>
+        <input type="password" name="pwd" id="pwd" >
+
+        <label for="pwd2">Confirmar senha*</label>
+        <input type="password" name="pwd2" id="pwd2" >
+
+        <p><strong>Dados pessoais </strong></p>
+        <label for="nome">Nome completo*</label>
+        <input type="text" name="nome" id="nome" required>
+        <label for="C">Cidade</label>
+        <input type="text" name="C" id="C" >
+        <label for="Estado">Estado</label>
+        <input type="text" name="Estado" id="Estado" required>
+
+        <label for="tel">Telefone</label>
+        <input type="tel" name="tel" id="tel" minlength="14" maxlength="15">
+        
+        <label for="email">E-mail*</label>
+        <input type="email" name="email" id="email" required>
+
+
+        <label for="cpf">CPF*</label>
+        <input type="text" name="cpf" id="cpf" required minlength="14" maxlength="14">
+
+        <label><strong>Gênero</strong></label>
+        <label for="gen">Masculino
+            <input type="radio" name="gen" id="masc" value="masc">
+        </label>
+        <label for="gen">Feminino
+            <input type="radio" name="gen" id="fem" value="fem">
+        </label>
+        <label for="gen">Outro 
+            <input type="radio" name="gen" id="out" value="out">
+        </label>  
+        <label for="nasc">Data de nascimento*</label>
+        <input type="date" name="nasc" id="nasc" >
+
+        <p><strong>Dados sobre o Trabalho </strong></p>
+        <label><strong>Turno</strong></label>
+        <label for="gen">Manututino
+            <input type="radio" name="Turno" id="M" value="M" >
+        </label>
+        <label for="gen">Vespertino
+            <input type="radio" name="Turno" id="V" value="V" >
+        </label>
+        <label for="gen">Noturno 
+            <input type="radio" name="Turno" id="N" value="N" >
+        </label>
+
+
+      
+
+        <label for="Especialidade">Especialidade*</label>
+        <input type="Text" name="espe" id="espe" required>
+        <label for="Setor">Setor de Trabalho</label>
+        <input type="text" name="Setor" id="Setor" required>
+
+
+        <label for="lic">Aceito os <br>
+            Termos de serviço e a<br>
+            Política de privacidade*</label>
+        <input type="checkbox" name="lic" id="lic" required>
+        
+        <input type="reset" value="Resetar">
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>
