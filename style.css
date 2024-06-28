@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: #333;
+    backdrop-filter: blur(20px);
+}
+
+header {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(6,77,166,1) 77%, rgba(0,212,255,1) 100%);
+    ;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+   
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    width: 95,5vmax;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 19%, rgba(6,77,166,1) 77%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+
+a {
+    color: #35424a;
+    
+
+   
+}
+
+a:hover {
+    color: #1ab188;
+}
+
+.dados-contato, .repositorio {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgb(253, 249, 249) ;
+  
+
+    
+} 
+
+img{
+    transform:scale(1.1,1.1);
+    border-radius: 100px;
+}
